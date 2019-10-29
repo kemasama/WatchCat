@@ -1,0 +1,26 @@
+
+# WatchCat Configuration
+# Use DeBan
+# Must install DeBan for your bungeecord server
+
+# Limit CPS (Use System current Mills)
+limitCPS: 100
+
+# Limit Count (If hack count over limit, wc kick player)
+limitCount: 3
+
+# If WC detect hack, always kick
+forceKick: false
+
+# If WC detect hack, always ban
+forceBan: false
+
+# Max Reach
+maxReach: 3.4
+
+# MAX XZ SPEED
+maxXZSpeed: 0.77
+
+# MAX XZ SPEED WITH WEB, WATER, ADN SLOWNESS BLOCK
+maxXZSpeedWith: 0.44
+

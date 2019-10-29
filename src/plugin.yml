@@ -1,0 +1,19 @@
+main: watchcat.Cat
+name: WatchCat
+version: 2.1.0
+description: 'WatchCat detect cheat!'
+authors: [kemasama, kemq_]
+softdepend: [Multiverse-Core, ProtocolLib, LuckPerms]
+website: https://play.devras.info
+
+commands:
+  test:
+    permission: cat.test
+permissions:
+  cat.test:
+    default: op
+  cat.notify:
+    default: op
+  cat.bypass:
+    default: false
+
