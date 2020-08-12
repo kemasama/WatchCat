@@ -37,20 +37,22 @@ public class AutoClicker implements Listener {
 			}
 
 			long current = now - old;
-			
-			System.out.println(key.toString() + " Times Per " + current);
-			
+
+			if (current < 100) {
+				System.out.println(key.toString() + " Times Per " + current);
+			}
+
 			if (current <= Cat.LimitCPS) {
 				Cat.broadcast(p, HackType.CLICK);
 				event.setCancelled(true);
 			}
-			
+
 			Times.put(key, now);
-			
+
 			FightData data = FightData.getData(p);
 			data.setLastAttackedEntity(data.getAttackedEntity());
 			data.setAttackedEntity(event.getEntity());
-			
+
 			KillAuraCheck.check(data, p);
 		}
 	}
